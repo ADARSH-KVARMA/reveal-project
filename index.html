@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/default.min.css">
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide 1 -->
+    <section>
+      <h2>Quarterly Earnings Report</h2>
+      <p>Technical Consultant — <a href="mailto:24f1000922@ds.study.iitm.ac.in">24f1000922@ds.study.iitm.ac.in</a></p>
+      <aside class="notes">
+        Welcome everyone and introduce yourself. Mention your role briefly.
+      </aside>
+    </section>
+
+    <!-- Slide 2: Markdown -->
+    <section data-markdown>
+      <textarea data-template>
+## Q2 Highlights 📈
+- Revenue grew by **18%**
+- Net Profit Margin reached **16%**
+      </textarea>
+      <aside class="notes">
+        Emphasize positive performance and growth trend here.
+      </aside>
+    </section>
+
+    <!-- Slide 3: Animated with fragments -->
+    <section>
+      <h2>Revenue Streams Breakdown</h2>
+      <p class="fragment">Retail Banking</p>
+      <p class="fragment">Corporate Banking</p>
+      <p class="fragment">Investment Services</p>
+      <aside class="notes">
+        Reveal each stream one-by-one and explain contribution.
+      </aside>
+    </section>
+
+    <!-- Slide 4: Code Block -->
+    <section>
+      <h2>Code Sample: EPS Calculation</h2>
+      <pre><code class="language-python">
+def earnings_per_share(net_income, shares_outstanding):
+    return net_income / shares_outstanding
+
+eps = earnings_per_share(4500000, 1540000)
+print(f"EPS: {eps:.2f}")
+      </code></pre>
+      <aside class="notes">
+        A simple example of a metric used in financial analysis.
+      </aside>
+    </section>
+
+    <!-- Slide 5: Math Formula -->
+    <section>
+      <h2>Return on Investment (ROI)</h2>
+      <p>
+        \[
+        ROI = \frac{Net\ Profit}{Investment} \times 100
+        \]
+      </p>
+      <aside class="notes">
+        Explain how ROI is used to compare profitability across divisions.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/math/math.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    slideNumber: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+  });
+</script>
+
+</body>
+</html>
